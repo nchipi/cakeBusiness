@@ -3,10 +3,10 @@ function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <header className="bg-light text-center text-dark py-5">
+      <header className="bg-light text-center text-dark py-5 hero-bg">
         <div className="container">
           <h1 className="display-4 fw-bold">Sweet Crumbs Bakery</h1>
-          <p className="lead">
+          <p className="lead fw-bold">
             Handcrafted cakes made with love and the finest ingredients
           </p>
           <Link to="/menu" className="btn btn-warning btn-lg mt-3 shadow">

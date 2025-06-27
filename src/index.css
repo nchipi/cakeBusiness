@@ -5,3 +5,25 @@ body {
   -moz-osx-font-smoothing: grayscale; /* For Firefox on Mac */
   font-smooth: always; /* For some versions of Firefox */
 }
+.hero-bg {
+  background-image: url("assets/cake-background.jpg");
+  background-size: cover;
+  background-position: center;
+  /* Add a semi-transparent overlay with backdrop filter */
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.3); /* Adjust color/opacity as needed */
+  backdrop-filter: blur(6px); /* Adjust blur as needed */
+  z-index: 0;
+}
+
+.hero-bg > * {
+  position: relative;
+  z-index: 1;
+}
