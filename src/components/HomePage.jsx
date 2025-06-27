@@ -9,7 +9,7 @@ function HomePage() {
           <p className="lead">
             Handcrafted cakes made with love and the finest ingredients
           </p>
-          <Link to="/menu" className="btn btn-warning btn-lg mt-3">
+          <Link to="/menu" className="btn btn-warning btn-lg mt-3 shadow">
             Explore Our Menu
           </Link>
         </div>
