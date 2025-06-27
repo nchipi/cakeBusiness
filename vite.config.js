@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/cakebusiness/", // <-- must match your repo name
+  base: "/cake_business/", // <-- must match your repo name
 });

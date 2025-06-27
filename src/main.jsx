@@ -6,7 +6,7 @@ import App from "./App.jsx";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/cakebusiness">
+  <BrowserRouter basename="/cake_business">
     <App />
   </BrowserRouter>
 );
