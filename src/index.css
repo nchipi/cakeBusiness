@@ -1,0 +1,7 @@
+body {
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif;
+  -webkit-font-smoothing: antialiased; /* For Chrome, Safari */
+  -moz-osx-font-smoothing: grayscale; /* For Firefox on Mac */
+  font-smooth: always; /* For some versions of Firefox */
+}

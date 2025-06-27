@@ -1,0 +1,68 @@
+import { Link } from "react-router-dom";
+function HomePage() {
+  return (
+    <div>
+      {/* Hero Section */}
+      <header className="bg-light text-center text-dark py-5">
+        <div className="container">
+          <h1 className="display-4 fw-bold">Sweet Crumbs Bakery</h1>
+          <p className="lead">
+            Handcrafted cakes made with love and the finest ingredients
+          </p>
+          <Link to="/menu" className="btn btn-warning btn-lg mt-3">
+            Explore Our Menu
+          </Link>
+        </div>
+      </header>
+
+      {/* Features Section */}
+      <section className="container py-5">
+        <div className="row text-center">
+          <div className="col-md-4 mb-4">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="Custom Cakes"
+              className="mb-3"
+            />
+            <h4>Custom Cakes</h4>
+            <p>
+              Designed to match your celebrations—birthdays, weddings & more.
+            </p>
+          </div>
+          <div className="col-md-4 mb-4">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="Fresh Daily"
+              className="mb-3"
+            />
+            <h4>Fresh Daily</h4>
+            <p>Baked every morning to ensure melt-in-your-mouth freshness.</p>
+          </div>
+          <div className="col-md-4 mb-4">
+            <img
+              src="https://via.placeholder.com/100"
+              alt="Delivery"
+              className="mb-3"
+            />
+            <h4>Fast Delivery</h4>
+            <p>
+              On-time and safe delivery so your sweets arrive fresh and fast.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="bg-warning text-dark text-center py-4">
+        <div className="container">
+          <h3 className="fw-bold">Ready to treat yourself?</h3>
+          <Link to="/contact" className="btn btn-warning shadow fw-bold mt-3">
+            Contact Us
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default HomePage;

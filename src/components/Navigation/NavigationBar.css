@@ -1,0 +1,21 @@
+.custom-nav-link {
+  transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  color: #6c4327 !important;
+}
+
+.custom-nav-link:hover,
+.custom-nav-link:focus {
+  background: #fff3cd;
+  color: #b86b2b !important;
+  box-shadow: 0 2px 8px rgba(184, 107, 43, 0.08);
+  text-decoration: none;
+}
+
+.active-nav {
+  background: #b86b2b;
+  color: #fff !important;
+  box-shadow: 0 4px 16px rgba(184, 107, 43, 0.15);
+  font-weight: bold;
+}
