@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const bgImages = [
-  "/cake_business/src/assets/cake-background.jpg",
-  "/cake_business/src/assets/cake-background2.jpg",
-  "/cake_business/src/assets/cake-background3.jpg",
+  "/cake_business/assets/cake-background.jpg",
+  "/cake_business/assets/cake-background2.jpg",
+  "/cake_business/assets/cake-background3.jpg",
 ];
 
 function HomePage() {
@@ -62,7 +62,7 @@ function HomePage() {
         <div className="row text-center">
           <div className="col-md-4 mb-4">
             <img
-              src="/cake_business/src/assets/cake-background.jpg"
+              src="/cake_business/assets/cake-background.jpg"
               alt="Custom Cakes"
               className="mb-3"
               style={{
@@ -79,7 +79,7 @@ function HomePage() {
           </div>
           <div className="col-md-4 mb-4">
             <img
-              src="/cake_business/src/assets/cake-background2.jpg"
+              src="/cake_business/assets/cake-background2.jpg"
               alt="Fresh Daily"
               className="mb-3"
               style={{
@@ -94,7 +94,7 @@ function HomePage() {
           </div>
           <div className="col-md-4 mb-4">
             <img
-              src="/cake_business/src/assets/cake-background3.jpg"
+              src="/cake_business/assets/cake-background3.jpg"
               alt="Delivery"
               className="mb-3"
               style={{
