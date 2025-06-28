@@ -48,10 +48,11 @@ function HomePage() {
         )}
         <div className="container" data-aos="fade-up">
           <h1 className="display-4 fw-bold" data-aos="fade-down">
-            Sweet Crumbs Bakery
+            Nestlise Foods and Catering
           </h1>
           <p className="lead fw-bold" data-aos="zoom-in">
-            Handcrafted cakes made with love and the finest ingredients
+            Handcrafted cakes and snacks made with love and the finest
+            ingredients
           </p>
           <Link
             to="/menu"

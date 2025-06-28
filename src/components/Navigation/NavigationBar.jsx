@@ -11,7 +11,7 @@ function NavigationBar() {
           className="navbar-brand fw-bold fs-2 shadow px-3 rounded-4"
           to="/"
         >
-          SweetCrumbs
+          Nestlise Foods
         </Link>
         <button
           className="navbar-toggler"
