@@ -46,12 +46,18 @@ function HomePage() {
             }}
           />
         )}
-        <div className="container">
-          <h1 className="display-4 fw-bold">Sweet Crumbs Bakery</h1>
-          <p className="lead fw-bold">
+        <div className="container" data-aos="fade-up">
+          <h1 className="display-4 fw-bold" data-aos="fade-down">
+            Sweet Crumbs Bakery
+          </h1>
+          <p className="lead fw-bold" data-aos="zoom-in">
             Handcrafted cakes made with love and the finest ingredients
           </p>
-          <Link to="/menu" className="btn btn-warning btn-lg mt-3 shadow">
+          <Link
+            to="/menu"
+            className="btn btn-warning btn-lg mt-3 shadow"
+            data-aos="fade-up"
+          >
             Explore Our Menu
           </Link>
         </div>
@@ -71,6 +77,7 @@ function HomePage() {
                 objectFit: "cover",
                 borderRadius: "8px",
               }}
+              data-aos="fade-up"
             />
             <h4>Custom Cakes</h4>
             <p>
@@ -88,6 +95,7 @@ function HomePage() {
                 objectFit: "cover",
                 borderRadius: "8px",
               }}
+              data-aos="fade-up"
             />
             <h4>Fresh Daily</h4>
             <p>Baked every morning to ensure melt-in-your-mouth freshness.</p>
@@ -103,6 +111,7 @@ function HomePage() {
                 objectFit: "cover",
                 borderRadius: "8px",
               }}
+              data-aos="fade-up"
             />
             <h4>Fast Delivery</h4>
             <p>

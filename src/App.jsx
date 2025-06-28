@@ -4,8 +4,14 @@ import HomePage from "./components/HomePage";
 import MenuPage from "./components/MenuPage";
 import ContactPage from "./components/ContactPage";
 import AboutPage from "./components/AboutPage";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <NavigationBar />
