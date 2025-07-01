@@ -91,7 +91,7 @@ function MenuPage() {
                   }}
                   data-aos="fade-up"
                 />
-                <div className="card-body" data-aos="fade-up">
+                <div className="card-body">
                   <h5 className="card-title">{cake.name}</h5>
                   <p className="card-text">{cake.description}</p>
                 </div>
