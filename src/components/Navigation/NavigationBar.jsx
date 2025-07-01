@@ -1,8 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
-import "./NavigationBar.css"; // Import the CSS file for styles
+import "./NavigationBar.css";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
 
 function NavigationBar() {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Handler to close the menu when a link is clicked
+  const handleNavLinkClick = () => setIsOpen(false);
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-warning sticky-top shadow">
@@ -10,6 +16,7 @@ function NavigationBar() {
         <Link
           className="navbar-brand fw-bold fs-2 shadow px-3 rounded-4"
           to="/"
+          onClick={handleNavLinkClick}
         >
           Nestlise Foods
         </Link>
@@ -18,10 +25,22 @@ function NavigationBar() {
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded={isOpen}
+          aria-label="Toggle navigation"
+          onClick={() => setIsOpen((prev) => !prev)}
         >
-          <span className="navbar-toggler-icon"></span>
+          {isOpen ? (
+            <FaTimes size={28} color="#333" />
+          ) : (
+            <FaBars size={28} color="#333" />
+          )}
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+
+        <div
+          className={`collapse navbar-collapse${isOpen ? " show" : ""}`}
+          id="navbarNav"
+        >
           <ul className="navbar-nav mx-auto fw-bold fs-5">
             <li className="nav-item mx-3">
               <Link
@@ -29,6 +48,7 @@ function NavigationBar() {
                   location.pathname === "/" ? " active-nav" : ""
                 }`}
                 to="/"
+                onClick={handleNavLinkClick}
               >
                 Home
               </Link>
@@ -39,6 +59,7 @@ function NavigationBar() {
                   location.pathname === "/menu" ? " active-nav" : ""
                 }`}
                 to="/menu"
+                onClick={handleNavLinkClick}
               >
                 Menu
               </Link>
@@ -49,6 +70,7 @@ function NavigationBar() {
                   location.pathname === "/about" ? " active-nav" : ""
                 }`}
                 to="/about"
+                onClick={handleNavLinkClick}
               >
                 About
               </Link>
@@ -59,6 +81,7 @@ function NavigationBar() {
                   location.pathname === "/contact" ? " active-nav" : ""
                 }`}
                 to="/contact"
+                onClick={handleNavLinkClick}
               >
                 Contact
               </Link>
