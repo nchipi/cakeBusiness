@@ -4,6 +4,7 @@ import HomePage from "./components/HomePage";
 import MenuPage from "./components/MenuPage";
 import ContactPage from "./components/ContactPage";
 import AboutPage from "./components/AboutPage";
+import Footer from "./components/Footer.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+      <Footer />
     </>
   );
 }
