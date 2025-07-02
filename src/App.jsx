@@ -5,6 +5,7 @@ import MenuPage from "./components/MenuPage";
 import ContactPage from "./components/ContactPage";
 import AboutPage from "./components/AboutPage";
 import Footer from "./components/Footer.jsx";
+import Page404 from "./components/Page404.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -21,6 +22,7 @@ function App() {
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
       <Footer />
     </>
