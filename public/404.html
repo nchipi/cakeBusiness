@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <script>
+        // Redirect all 404s to the root, preserving the path for React Router
+        var path = window.location.pathname.replace(/^\/cake_business/, "");
+        window.location.replace("/cake_business/?" + "redirect=" + encodeURIComponent(path + window.location.search + window.location.hash));
+    </script>
+</head>
+
+<body>
+    <h1>Redirecting…</h1>
+</body>
+
+</html>
